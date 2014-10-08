@@ -9,6 +9,7 @@ class AboutLayer:public Layer
 {
 public:
 	AboutLayer( );
+    
 	~AboutLayer( );
 
 	virtual bool init( );

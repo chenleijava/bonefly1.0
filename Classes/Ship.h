@@ -29,7 +29,7 @@ public:
 	virtual bool init( );
 	//销毁
 	virtual void destory( );
-	//受到伤害 回调
+	
 	virtual int hurt( int &_canHurt );
 
 	//ship fire

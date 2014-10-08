@@ -22,11 +22,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
 
 #if (CC_TARGET_PLATFORM==CC_PLATFORM_ANDROID)
-    
         pEGLView->setFrameSize(720, 1280);
-    
 #elif(CC_TARGET_PLATFORM==CC_PLATFORM_IOS||CC_TARGET_PLATFORM==CC_PLATFORM_MAC)
-        
         pEGLView->setFrameSize(320,480);
 #endif
 
@@ -76,6 +73,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
 	simpla_audio->setBackgroundMusicVolume( 1.0f );
 	simpla_audio->setEffectsVolume( 0.5f );
+    
 
 	if(Config::getInstance( )->getmusicState( ))
 	{

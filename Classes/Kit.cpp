@@ -6,13 +6,33 @@ Kit::Kit(){}
 Kit::~Kit(){}
 
 
+
+
+/*
+ åŠ è½½cocosstudio å¯¼å‡ºçš„ jsonæ–‡ä»¶
+ NodeReader::getInstance()
+ 
+ */
+Widget* Kit::createWithJsonFileInMac(const std::string& filename){
+     return (Widget*)NodeReader::getInstance()->createNode(filename);
+}
+
+/**
+ åŠ è½½cocosstudio å¯¼å‡ºçš„ jsonæ–‡ä»¶
+ GUIReader::getInstance()
+ */
+Widget* Kit::createWithJsonFile(const std::string& filename){
+    return (Widget*)GUIReader::getInstance()->widgetFromBinaryFile(filename.c_str());
+}
+
+
 Animation * Kit::createAnimation_1(const char *fmt, int count, std::string plist, float fps /*= 0.0f*/, std::string animationName /*= ""*/, bool _cache /*= false */)
 {
-	//cocos vector
-	Vector<SpriteFrame*> _vectorArray;
-	char png[100] = { 0 };
-	auto _SpriteFrameCache = SpriteFrameCache::getInstance();
-	if (!plist.empty())
+    //cocos vector
+    Vector<SpriteFrame*> _vectorArray;
+    char png[100] = { 0 };
+    auto _SpriteFrameCache = SpriteFrameCache::getInstance();
+    if (!plist.empty())
 	{
 		_SpriteFrameCache->addSpriteFramesWithFile(plist);
 	}
@@ -142,16 +162,16 @@ Animation * Kit::createAnimation(const char *fmt, int count, float fps /*= 0.0f*
 
 ActionInterval * Kit::creatEaseSineInOut(GLubyte opacity0, GLubyte opacity1)
 {
-	//ÉèÖÃÍ¸Ã÷¶È±ä»¯  80---255
+	//â€¦Ã‹Ã·âˆšÃ•âˆâˆšËœâˆ‚Â»Â±â€°ÂªÃ˜  80---255
 	auto fadeinlight = FadeTo::create(1.5f, opacity0);
 	auto fadeinDepth = FadeTo::create(1.5f, opacity1);
-	//´´½¨µ­½øÐ§¹û
+	//Â¥Â¥Î©Â®Âµâ‰ Î©Â¯â€“ÃŸÏ€Ëš
 	auto easeIn = EaseSineInOut::create(fadeinlight);
 	auto easeOut = EaseSineInOut::create(fadeinDepth);
 	return RepeatForever::create(Sequence::create(easeIn, easeOut, NULL));
 }
 
-//ÇåÀí¶¯»­»º´æ£¬È»ºóÇåÀí¾«ÁéÖ¡»º´æ£¬×îºóÊÇÎÆÀí»º´æ¡£°´ÕÕÒýÓÃ²ã¼¶ÓÉ¸ßµ½µÍ£¬ÒÔ±£Ö¤ÊÍ·ÅÒýÓÃÓÐÐ§¡£
+//Â«Ã‚Â¿ÃŒâˆ‚Ã˜Âªâ‰ Âªâˆ«Â¥ÃŠÂ£Â¨Â»Âªâˆ«Ã›Â«Ã‚Â¿ÃŒÃ¦Â´Â¡ÃˆÃ·Â°Âªâˆ«Â¥ÃŠÂ£Â¨â—ŠÃ“âˆ«Ã›Â Â«Å’âˆ†Â¿ÃŒÂªâˆ«Â¥ÃŠÂ°Â£âˆžÂ¥â€™â€™â€œËâ€âˆšâ‰¤â€žÂºâˆ‚â€â€¦âˆï¬‚ÂµÎ©ÂµÃ•Â£Â¨â€œâ€˜Â±Â£Ã·Â§Â Ã•âˆ‘â‰ˆâ€œËâ€âˆšâ€â€“â€“ÃŸÂ°Â£
 void Kit::releaseCaches()
 {
 	AnimationCache::destroyInstance();
@@ -159,7 +179,7 @@ void Kit::releaseCaches()
 	Director::getInstance()->getTextureCache()->removeUnusedTextures();
 }
 
-//»ñÈ¡¶ÔÏóµÄÎÆÀí¾ØÐÎÇøÓò---×¢ÒâÃªµãµÄÓ°Ïì
+//ÂªÃ’Â»Â°âˆ‚â€˜Å“Ã›ÂµÆ’Å’âˆ†Â¿ÃŒÃ¦Ã¿â€“Å’Â«Â¯â€Ãš---â—ŠÂ¢â€œâ€šâˆšâ„¢Âµâ€žÂµÆ’â€âˆžÅ“Ã
 Rect Kit::getRect(Node *node, float w, float h)
 {
 	auto sprite_size = node->getContentSize();

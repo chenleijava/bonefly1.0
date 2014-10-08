@@ -15,6 +15,7 @@ USING_NS_CC;
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 using namespace cocostudio;
+using namespace cocostudio::timeline;
 using namespace cocos2d::ui;
 
 
@@ -30,22 +31,58 @@ class Kit
 {
 public:
 	Kit( );
+    
+    
 
 	~Kit( );
-	//http://tool.oschina.net/commons?type=3  RGB ¶ÔÕÕ±í
 
-	//************************************
-	// Method:    createAnimation
-	// FullName:  Kit::createAnimation
-	// Access:    public static 
-	// Returns:   Animation *
-	// Qualifier:  ´´½¨×´Ì¬¶¯»­µÄ·½·¨
-	// Parameter: const char * fmt  ×´Ì¬µÄÍ¼Æ¬Ãû¸ñÊ½(²é¿´pd_sprites.plist							Ã¿ÖÖ×´Ì¬¸ñÊ½¶¼ÀàËÆhero_idle_xx.png)
-	// Parameter: int count ×´Ì¬Í¼Æ¬ĞòÁĞµÄÊıÁ¿
-	// Parameter: float fps ¶¯»­µÄ²¥·ÅÖ¡ÂÊ
-	// %02d £º±íÊ¾Êä³ö2Î»µÄÊı ²»¹»Ìí¼Ó 0   00.png
-	// %03d £º±íÊ¾Êä³ö3Î»µÄÊı ²»¹»Ìí¼Ó 0   000.png
-	//************************************
+
+    /**
+     @Author çŸ³å¤´å“¥å“¥, 14-10-08 23:10:28
+     
+     @brief  åŠ è½½cocosstudio å¯¼å‡ºçš„ jsonæ–‡ä»¶
+     NodeReader::getInstance()
+     
+     @param filename json file name
+     
+     @return return value ui widget
+     
+     @since version number
+     */
+    static Widget* createWithJsonFileInMac(const std::string& filename);
+    
+
+    /**
+     @Author çŸ³å¤´å“¥å“¥, 14-10-08 23:10:34
+     
+     @brief    åŠ è½½cocosstudio å¯¼å‡ºçš„ jsonæ–‡ä»¶
+     GUIReader::getInstance()
+     
+     @param filename json file name
+     
+     @return return value widget
+     
+     @since <#version number#>
+     */
+     static Widget* createWithJsonFile(const std::string& filename);
+    
+    
+
+    /**
+     @Author çŸ³å¤´å“¥å“¥, 14-10-08 23:10:37
+     
+     @brief  åˆ›å»ºåŠ¨ç”»
+     
+     @param fmt    <#fmt description#>
+     @param count  <#count description#>
+     @param .0f    <#.0f description#>
+     @param ""     <#"" description#>
+     @param _cache _cache description
+     
+     @return return value description
+     
+     @since <#version number#>
+     */
 	static Animation *createAnimation( const char *fmt, int count, float fps = 0.0f, std::string animationName = "", bool _cache = false );
 
 
@@ -63,6 +100,7 @@ public:
 	//************************************
 	static Animation *createAnimation_1( const char *fmt, int count, float fps = 0.0f, std::string animationName = "", bool _cache = false );
 
+    
 
 	//************************************
 	// Method:    createAnimation
@@ -76,11 +114,11 @@ public:
 	// Parameter: float fps
 	// Parameter: std::string animationName
 	// Parameter: bool _cache
-	// %02d £º±íÊ¾Êä³ö2Î»µÄÊı ²»¹»Ìí¼Ó 0   00.png
-	// %03d £º±íÊ¾Êä³ö3Î»µÄÊı ²»¹»Ìí¼Ó 0   000.png
+	// %02d å ä½ 2 ï¼Œä¸å¤Ÿä½¿ç”¨0 å¡«å…… 00.png
 	//************************************
 	static Animation *createAnimation( const char *fmt, int count, std::string plist, float fps = 0.0f, std::string animationName = "", bool _cache = false );
 
+    
 	//************************************
 	// Method:    createAnimation_1
 	// FullName:  Kit::createAnimation_1
@@ -97,22 +135,24 @@ public:
 	static Animation *createAnimation_1( const char *fmt, int count, std::string plist, float fps = 0.0f, std::string animationName = "", bool _cache = false );
 
 
+    
 	//************************************
 	// Method:    creatEaseSineInOut
 	// FullName:  Kit::creatEaseSineInOut
 	// Access:    public static 
 	// Returns:   ActionInterval *
-	// Qualifier:  ´´½¨µ­½øµ­³öÏÔÊ¾µÄĞ§¹û¶¯»­
+	// Qualifier:  æ·¡è¿›æ·¡å‡º
 	//************************************
 	static  ActionInterval * creatEaseSineInOut( GLubyte opacity0 = 100, GLubyte opacity1 = 255 );
 
+    
 
 	//************************************
 	// Method:    releaseCaches
 	// FullName:  Kit::releaseCaches
 	// Access:    public static 
 	// Returns:   void
-	// Qualifier: ÊÍ·Åcache
+	// Qualifier: é‡Šæ”¾èµ„æº
 	//************************************
 	static void releaseCaches( );
 
@@ -123,24 +163,20 @@ public:
 	// FullName:  Kit::getRect
 	// Access:    public static 
 	// Returns:   Rect
-	// Qualifier: »ñÈ¡Ä³¸önodeµÄ¾ØĞÎÇøÓò
 	// Parameter: Node * node  
 	// Parameter: float w   dec w
 	// Parameter: float h    dec h
 	//************************************
     static cocos2d::Rect getRect( Node *node, float w = 0.0f, float h = 0.0f );
 
-
-	// ´´½¨×ÖÌå±êÇ©
+    
+    
 	//************************************
 	// Method:    creatWithTTf
 	// FullName:  Kit::creatWithTTf
 	// Access:    public static 
 	// Returns:   cocos2d::Label
 	// Qualifier:
-	// Parameter: const char * filePath    ttf path
-	// Parameter: int size  ´óĞ¡
-	// Parameter: const std::string & text ÏÔÊ¾ÎÄ±¾
 	//************************************
 	static Label* creatWithTTf( const char* filePath, int size, const std::string& text );
 
@@ -162,25 +198,7 @@ public:
 	//************************************
 	static int code_convert( const char *from_charset, const char *to_charset, const char *inbuf, size_t inlen, char *outbuf, size_t outlen );
 //
-//	//************************************
-//	// Method:    utf2gb
-//	// FullName:  Kit::utf2gb
-//	// Access:    public static 
-//	// Returns:   std::string
-//	// Qualifier:
-//	// Parameter: const char * inbuf
-//	//************************************
-//	static string  utf2gb( const char *inbuf );
-//
-//	//************************************
-//	// Method:    gb2utf8
-//	// FullName:  Kit::gb2utf8
-//	// Access:    public static 
-//	// Returns:   std::string
-//	// Qualifier:
-//	// Parameter: const char * inbuf
-//	//************************************
-//	static std::string  gb2utf8( const char *inbuf );
+
 
 
 
@@ -197,7 +215,7 @@ public:
 	static Widget* getWidget( Widget *root, std::string &widgetName );
 
 
-	//±³¾°ÒôÀÖ ÒôĞ§´¦Àí
+	//Â±â‰¥Ã¦âˆâ€œÃ™Â¿Ã· â€œÃ™â€“ÃŸÂ¥Â¶Â¿ÃŒ
 	static SimpleAudioEngine * getAudio( );
 
 	static void preloadMusicAndEffect(char* files,bool music=false);
@@ -210,7 +228,6 @@ public:
 	static void pauseAllEffect( );
 
 
-	//Á£×ÓÌØĞ§
 
 	//************************************
 	// Method:    addParticle
