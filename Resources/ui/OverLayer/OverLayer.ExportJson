@@ -1,0 +1,160 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 320,
+  "designHeight": 480,
+  "dataScale": 1.0,
+  "textures": [
+    "BoneFly0.plist"
+  ],
+  "texturesPng": [
+    "BoneFly0.png"
+  ],
+  "nodeTree": {
+    "options": {
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "bgColorOpacity": 0,
+          "visible": true,
+          "classType": "Panel",
+          "width": 320.0,
+          "height": 480.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 1.0,
+          "useMergedTexture": true,
+          "actionTag": -1,
+          "tag": 30,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_9",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "fileNameData": {
+                "resourceType": 1,
+                "path": "gameoverbg.png",
+                "plistFile": ""
+              },
+              "scale9Width": 320.0,
+              "scale9Height": 480.0,
+              "x": 160.0,
+              "y": 240.0,
+              "visible": true,
+              "classType": "ImageView",
+              "width": 320.0,
+              "height": 480.0,
+              "positionPercentX": 0.5,
+              "positionPercentY": 0.5,
+              "sizePercentX": 1.0,
+              "sizePercentY": 1.0,
+              "useMergedTexture": true,
+              "actionTag": 51868736,
+              "tag": 31,
+              "name": "bg_game_over",
+              "classname": "ImageView"
+            },
+            "children": [],
+            "classname": "ImageView"
+          },
+          {
+            "options": {
+              "normalData": {
+                "resourceType": 1,
+                "path": "雷电素材/GameMenu/Back.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 0
+              },
+              "disabledData": {
+                "resourceType": 0
+              },
+              "text": "",
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 69.0,
+              "scale9Height": 36.0,
+              "x": 283.0,
+              "y": 20.0,
+              "colorR": 0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 69.0,
+              "height": 36.0,
+              "positionPercentX": 0.884375,
+              "positionPercentY": 0.0416666679,
+              "sizePercentX": 0.321875,
+              "sizePercentY": 0.0833333358,
+              "useMergedTexture": true,
+              "actionTag": 8835188,
+              "tag": 45,
+              "ignoreSize": true,
+              "name": "btn_back",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
+          },
+          {
+            "options": {
+              "normalData": {
+                "resourceType": 1,
+                "path": "雷电素材/GameLevel/GameStartSelected.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 1,
+                "path": "雷电素材/GameLevel/GameStartNormal.png",
+                "plistFile": ""
+              },
+              "disabledData": {
+                "resourceType": 0
+              },
+              "text": "",
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 182.0,
+              "scale9Height": 43.0,
+              "x": 156.0,
+              "y": 168.0,
+              "colorR": 76,
+              "colorG": 169,
+              "colorB": 186,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 182.0,
+              "height": 43.0,
+              "positionPercentX": 0.4875,
+              "positionPercentY": 0.35,
+              "sizePercentX": 0.321875,
+              "sizePercentY": 0.0833333358,
+              "useMergedTexture": true,
+              "actionTag": 22687134,
+              "tag": 65,
+              "ignoreSize": true,
+              "name": "btn_play_again",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}

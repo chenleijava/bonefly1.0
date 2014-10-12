@@ -21,10 +21,12 @@ bool StartLayer::init( )
 	}
 
 	//init ui
-    start_ui = GUIReader::getInstance( )->widgetFromJsonFile( ui_start_res );
+    start_ui = Kit::createWithJsonFileInMac( ui_start_res );
 	this->addChild(start_ui);
 
-	//get btn and init call back fun, and then  register it  ,开始游戏   选择关卡
+   
+    
+	//get btn and init call back fun, and then  register it
 	ui_start_call = [&]( Ref*, Widget::TouchEventType event_type){
 		if(event_type==Widget::TouchEventType::ENDED)
 		{
@@ -76,7 +78,10 @@ bool StartLayer::init( )
 	auto btn_exit = static_cast<Button*>(Helper::seekWidgetByName( start_ui, "btn_exit" ));
 	btn_exit->addTouchEventListener( ui_exit_call );
 
+    
+    
 
+    //鍏充簬
 	auto text_about = static_cast<TextField*>(Helper::seekWidgetByName( start_ui, "text_about" ));
 	text_about->addTouchEventListener( [&]( Ref*, Widget::TouchEventType event_type ){
 		if (event_type==Widget::TouchEventType::ENDED)

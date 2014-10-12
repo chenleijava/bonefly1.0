@@ -27,14 +27,54 @@ public:
 	~Ship( );
 
 	virtual bool init( );
-	//����
+
+    /**
+     @Author 石头哥哥, 14-10-09 20:10:26
+     
+     @brief  销毁ship
+     
+     @param  description
+     
+     @since version number
+     */
 	virtual void destory( );
 	
+    /**
+     @Author 石头哥哥 14-10-09 20:10:03
+     
+     @brief  <#Description#>
+     
+     @param _canHurt <#_canHurt description#>
+     
+     @return <#return value description#>
+     
+     @since <#version number#>
+     */
 	virtual int hurt( int &_canHurt );
 
-	//ship fire
+
+    /**
+     @Author 石头哥哥, 14-10-09 20:10:36
+     
+     @brief  ship fire
+     
+     @param dt dt time
+     
+     @since <#version number#>
+     */
 	void fire( float dt );
 
+    /**
+     @Author 石头哥哥, 14-10-09 20:10:09
+     
+     @brief  碰撞矩形区域
+     
+     @param  <# description#>
+     
+     @return <#return value description#>
+     
+     @since <#version number#>
+     */
 
 	virtual Rect rect( );
 

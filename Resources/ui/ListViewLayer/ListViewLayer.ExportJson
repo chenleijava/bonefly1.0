@@ -1,0 +1,356 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 320,
+  "designHeight": 480,
+  "dataScale": 1.0,
+  "textures": [
+    "BoneFly0.plist"
+  ],
+  "texturesPng": [
+    "BoneFly0.png"
+  ],
+  "nodeTree": {
+    "options": {
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "bgColorOpacity": 0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Panel",
+          "width": 320.0,
+          "height": 480.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 1.0,
+          "useMergedTexture": true,
+          "actionTag": -1,
+          "tag": 174,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_19",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "colorType": 0,
+              "clipAble": true,
+              "bounceEnable": true,
+              "direction": 1,
+              "gravity": 2,
+              "itemMargin": 13,
+              "x": 45.0,
+              "y": 154.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "ListView",
+              "width": 219.0,
+              "height": 200.0,
+              "positionType": 1,
+              "positionPercentX": 0.140625,
+              "positionPercentY": 0.320833325,
+              "sizePercentX": 0.684375,
+              "sizePercentY": 0.416666657,
+              "useMergedTexture": true,
+              "actionTag": 14040444,
+              "tag": 178,
+              "anchorPointX": 0.0,
+              "anchorPointY": 0.0,
+              "name": "ListView_2",
+              "classname": "ListView"
+            },
+            "children": [
+              {
+                "options": {
+                  "normalData": {
+                    "resourceType": 1,
+                    "path": "GUI/button.png",
+                    "plistFile": ""
+                  },
+                  "pressedData": {
+                    "resourceType": 0
+                  },
+                  "disabledData": {
+                    "resourceType": 0
+                  },
+                  "text": "",
+                  "capInsetsWidth": 1.0,
+                  "capInsetsHeight": 1.0,
+                  "scale9Width": 103.0,
+                  "scale9Height": 40.0,
+                  "x": 109.0,
+                  "y": 317.0,
+                  "touchAble": true,
+                  "visible": true,
+                  "classType": "Button",
+                  "width": 103.0,
+                  "height": 40.0,
+                  "positionPercentX": 0.5,
+                  "positionPercentY": 1.585,
+                  "sizePercentX": 0.470319629,
+                  "sizePercentY": 0.2,
+                  "useMergedTexture": true,
+                  "actionTag": 23604106,
+                  "tag": 179,
+                  "ignoreSize": true,
+                  "layoutParameter": {
+                    "type": 1,
+                    "gravity": 2,
+                    "relativeName": "Button_3",
+                    "relativeToName": "ListView_2"
+                  },
+                  "name": "Button_3",
+                  "classname": "Button"
+                },
+                "children": [],
+                "classname": "Button"
+              },
+              {
+                "options": {
+                  "backGroundBoxData": {
+                    "resourceType": 1,
+                    "path": "GUI/selected01.png",
+                    "plistFile": ""
+                  },
+                  "backGroundBoxSelectedData": {
+                    "resourceType": 0
+                  },
+                  "backGroundBoxDisabledData": {
+                    "resourceType": 0
+                  },
+                  "frontCrossData": {
+                    "resourceType": 1,
+                    "path": "GUI/selected02.png",
+                    "plistFile": ""
+                  },
+                  "frontCrossDisabledData": {
+                    "resourceType": 0
+                  },
+                  "selectedState": true,
+                  "x": 109.0,
+                  "y": 256.0,
+                  "touchAble": true,
+                  "visible": true,
+                  "ZOrder": 1,
+                  "classType": "CheckBox",
+                  "width": 56.0,
+                  "height": 56.0,
+                  "positionPercentX": 0.5,
+                  "positionPercentY": 1.28,
+                  "sizePercentX": 0.255707771,
+                  "sizePercentY": 0.28,
+                  "useMergedTexture": true,
+                  "actionTag": 59406879,
+                  "tag": 180,
+                  "ignoreSize": true,
+                  "layoutParameter": {
+                    "type": 1,
+                    "gravity": 2,
+                    "relativeName": "CheckBox_4",
+                    "relativeToName": "ListView_2"
+                  },
+                  "name": "CheckBox_4",
+                  "classname": "CheckBox"
+                },
+                "children": [],
+                "classname": "CheckBox"
+              },
+              {
+                "options": {
+                  "text": "你好 ",
+                  "x": 109.0,
+                  "y": 203.0,
+                  "touchAble": true,
+                  "visible": true,
+                  "ZOrder": 2,
+                  "classType": "TextField",
+                  "width": 45.0,
+                  "height": 23.0,
+                  "positionPercentX": 0.5,
+                  "positionPercentY": 1.0175,
+                  "sizePercentX": 0.388127863,
+                  "sizePercentY": 0.115,
+                  "useMergedTexture": true,
+                  "actionTag": 6448665,
+                  "tag": 181,
+                  "ignoreSize": true,
+                  "layoutParameter": {
+                    "type": 1,
+                    "gravity": 2,
+                    "relativeName": "TextField_5",
+                    "relativeToName": "ListView_2"
+                  },
+                  "name": "TextField_5",
+                  "classname": "TextField"
+                },
+                "children": [],
+                "classname": "TextField"
+              },
+              {
+                "options": {
+                  "text": "list view",
+                  "x": 109.0,
+                  "y": 167.0,
+                  "visible": true,
+                  "ZOrder": 3,
+                  "classType": "Label",
+                  "width": 70.0,
+                  "height": 23.0,
+                  "positionPercentX": 0.5,
+                  "positionPercentY": 0.8375,
+                  "sizePercentX": 0.4155251,
+                  "sizePercentY": 0.115,
+                  "useMergedTexture": true,
+                  "actionTag": 24940920,
+                  "tag": 182,
+                  "ignoreSize": true,
+                  "layoutParameter": {
+                    "type": 1,
+                    "gravity": 2,
+                    "relativeName": "Label_6",
+                    "relativeToName": "ListView_2"
+                  },
+                  "name": "Label_6",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              },
+              {
+                "options": {
+                  "fileNameData": {
+                    "resourceType": 0,
+                    "path": "GUI/missing-font.fnt",
+                    "plistFile": ""
+                  },
+                  "x": 109.0,
+                  "y": 124.0,
+                  "visible": true,
+                  "ZOrder": 4,
+                  "classType": "LabelBMFont",
+                  "width": 235.0,
+                  "height": 37.0,
+                  "positionPercentX": 0.5,
+                  "positionPercentY": 0.6225,
+                  "sizePercentX": 1.07305932,
+                  "sizePercentY": 0.185,
+                  "useMergedTexture": true,
+                  "actionTag": 10912081,
+                  "tag": 183,
+                  "ignoreSize": true,
+                  "layoutParameter": {
+                    "type": 1,
+                    "gravity": 2,
+                    "relativeName": "BitmapLabel_7",
+                    "relativeToName": "ListView_2"
+                  },
+                  "name": "BitmapLabel_7",
+                  "classname": "LabelBMFont"
+                },
+                "children": [],
+                "classname": "LabelBMFont"
+              },
+              {
+                "options": {
+                  "textureData": {
+                    "resourceType": 1,
+                    "path": "GUI/loadingbar.png",
+                    "plistFile": ""
+                  },
+                  "percent": 60,
+                  "x": 109.0,
+                  "y": 81.0,
+                  "touchAble": true,
+                  "visible": true,
+                  "ZOrder": 5,
+                  "classType": "LoadingBar",
+                  "width": 350.0,
+                  "height": 24.0,
+                  "positionPercentX": 0.5,
+                  "positionPercentY": 0.405,
+                  "sizePercentX": 1.5981735,
+                  "sizePercentY": 0.12,
+                  "actionTag": 62056791,
+                  "tag": 186,
+                  "ignoreSize": true,
+                  "layoutParameter": {
+                    "type": 1,
+                    "gravity": 2,
+                    "relativeName": "ProgressBar_10",
+                    "relativeToName": "ListView_2"
+                  },
+                  "name": "ProgressBar_10",
+                  "classname": "LoadingBar"
+                },
+                "children": [],
+                "classname": "LoadingBar"
+              },
+              {
+                "options": {
+                  "backGroundBoxData": {
+                    "resourceType": 1,
+                    "path": "GUI/selected01.png",
+                    "plistFile": ""
+                  },
+                  "backGroundBoxSelectedData": {
+                    "resourceType": 0
+                  },
+                  "backGroundBoxDisabledData": {
+                    "resourceType": 0
+                  },
+                  "frontCrossData": {
+                    "resourceType": 1,
+                    "path": "GUI/selected02.png",
+                    "plistFile": ""
+                  },
+                  "frontCrossDisabledData": {
+                    "resourceType": 0
+                  },
+                  "selectedState": true,
+                  "x": 109.0,
+                  "y": 28.0,
+                  "touchAble": true,
+                  "visible": true,
+                  "ZOrder": 6,
+                  "classType": "CheckBox",
+                  "width": 56.0,
+                  "height": 56.0,
+                  "positionPercentX": 0.5,
+                  "positionPercentY": 0.14,
+                  "sizePercentX": 0.255707771,
+                  "sizePercentY": 0.28,
+                  "useMergedTexture": true,
+                  "actionTag": 49592279,
+                  "tag": 187,
+                  "ignoreSize": true,
+                  "layoutParameter": {
+                    "type": 1,
+                    "gravity": 2,
+                    "relativeName": "CheckBox_11",
+                    "relativeToName": "ListView_2"
+                  },
+                  "name": "CheckBox_11",
+                  "classname": "CheckBox"
+                },
+                "children": [],
+                "classname": "CheckBox"
+              }
+            ],
+            "classname": "ListView"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}

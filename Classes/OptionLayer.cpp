@@ -16,12 +16,13 @@ bool OptionLayer::init( )
 	{
 		return false;
 	}
-	//³õÊ¼»¯ui
-	ui_option = GUIReader::getInstance( )->widgetFromJsonFile(ui_option_res);
-	this->addChild(ui_option );
-
-	//init call back fun and  register touch event lister
-	ui_music_call = [&](Ref * btn,Widget::TouchEventType type ){
+    
+    //åŠ è½½è®¾ç½®ui
+    ui_option = Kit::createWithJsonFileInMac(ui_option_res);
+    this->addChild(ui_option );
+    
+    //init call back fun and  register touch event lister
+    ui_music_call = [&](Ref * btn,Widget::TouchEventType type ){
 		if(type == Widget::TouchEventType::ENDED)
 		{
 			auto _btn = static_cast<Button*>(btn);

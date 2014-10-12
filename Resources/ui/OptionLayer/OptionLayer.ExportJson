@@ -1,0 +1,239 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 320,
+  "designHeight": 480,
+  "dataScale": 1.0,
+  "textures": [
+    "BoneFly0.plist"
+  ],
+  "texturesPng": [
+    "BoneFly0.png"
+  ],
+  "nodeTree": {
+    "options": {
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "bgColorOpacity": 0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Panel",
+          "width": 320.0,
+          "height": 480.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 1.0,
+          "useMergedTexture": true,
+          "actionTag": -1,
+          "tag": 35,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_5",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "fileNameData": {
+                "resourceType": 1,
+                "path": "gameoverbg.png",
+                "plistFile": ""
+              },
+              "scale9Width": 320.0,
+              "scale9Height": 480.0,
+              "x": 160.0,
+              "y": 240.0,
+              "visible": true,
+              "classType": "ImageView",
+              "width": 320.0,
+              "height": 480.0,
+              "positionPercentX": 0.5,
+              "positionPercentY": 0.5,
+              "sizePercentX": 0.25,
+              "sizePercentY": 0.166666672,
+              "useMergedTexture": true,
+              "actionTag": 9864772,
+              "tag": 36,
+              "ignoreSize": true,
+              "name": "bg_option",
+              "classname": "ImageView"
+            },
+            "children": [],
+            "classname": "ImageView"
+          },
+          {
+            "options": {
+              "normalData": {
+                "resourceType": 1,
+                "path": "soundEffect.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 1,
+                "path": "soundEffect.png",
+                "plistFile": ""
+              },
+              "disabledData": {
+                "resourceType": 1,
+                "path": "soundEffect_disable.png",
+                "plistFile": ""
+              },
+              "text": "",
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 125.0,
+              "scale9Height": 140.0,
+              "x": 253.0,
+              "y": 249.0,
+              "scaleX": 0.55199945,
+              "scaleY": 0.4999997,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 125.0,
+              "height": 140.0,
+              "positionPercentX": 0.790625,
+              "positionPercentY": 0.51875,
+              "sizePercentX": 0.321875,
+              "sizePercentY": 0.0833333358,
+              "useMergedTexture": true,
+              "actionTag": 11585623,
+              "tag": 37,
+              "ignoreSize": true,
+              "name": "btn_effect",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
+          },
+          {
+            "options": {
+              "normalData": {
+                "resourceType": 1,
+                "path": "music.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 1,
+                "path": "music.png",
+                "plistFile": ""
+              },
+              "disabledData": {
+                "resourceType": 1,
+                "path": "music_disable.png",
+                "plistFile": ""
+              },
+              "text": "",
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 125.0,
+              "scale9Height": 140.0,
+              "x": 55.0,
+              "y": 249.0,
+              "scaleX": 0.55199945,
+              "scaleY": 0.4999997,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 125.0,
+              "height": 140.0,
+              "positionPercentX": 0.171875,
+              "positionPercentY": 0.51875,
+              "sizePercentX": 0.321875,
+              "sizePercentY": 0.0833333358,
+              "useMergedTexture": true,
+              "actionTag": 61847725,
+              "tag": 39,
+              "ignoreSize": true,
+              "name": "btn_music",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
+          },
+          {
+            "options": {
+              "normalData": {
+                "resourceType": 1,
+                "path": "雷电素材/GameMenu/Back.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 0
+              },
+              "disabledData": {
+                "resourceType": 0
+              },
+              "text": "",
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 69.0,
+              "scale9Height": 36.0,
+              "x": 280.0,
+              "y": 22.0,
+              "colorR": 64,
+              "colorG": 224,
+              "colorB": 208,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 69.0,
+              "height": 36.0,
+              "positionPercentX": 0.875,
+              "positionPercentY": 0.0458333343,
+              "sizePercentX": 0.321875,
+              "sizePercentY": 0.0833333358,
+              "useMergedTexture": true,
+              "actionTag": 43434531,
+              "tag": 42,
+              "ignoreSize": true,
+              "name": "btn_back",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
+          },
+          {
+            "options": {
+              "fontSize": 35,
+              "text": "设 置",
+              "hAlignment": 1,
+              "vAlignment": 1,
+              "touchScaleEnable": true,
+              "x": 158.0,
+              "y": 355.0,
+              "scaleX": 1.04436529,
+              "scaleY": 1.02608752,
+              "visible": true,
+              "classType": "Label",
+              "width": 79.0,
+              "height": 40.0,
+              "positionPercentX": 0.49375,
+              "positionPercentY": 0.7395833,
+              "sizePercentX": 0.284375,
+              "sizePercentY": 0.0479166657,
+              "useMergedTexture": true,
+              "actionTag": 38167092,
+              "tag": 47,
+              "ignoreSize": true,
+              "name": "option_label",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}

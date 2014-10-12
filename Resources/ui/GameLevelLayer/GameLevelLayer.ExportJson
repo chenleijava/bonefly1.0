@@ -1,0 +1,332 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 320,
+  "designHeight": 480,
+  "dataScale": 1.0,
+  "textures": [
+    "BoneFly0.plist",
+    "BoneFly1.plist"
+  ],
+  "texturesPng": [
+    "BoneFly0.png",
+    "BoneFly1.png"
+  ],
+  "nodeTree": {
+    "options": {
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "bgColorOpacity": 0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Panel",
+          "width": 320.0,
+          "height": 480.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 1.0,
+          "useMergedTexture": true,
+          "actionTag": -1,
+          "tag": 86,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_18",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "fileNameData": {
+                "resourceType": 1,
+                "path": "levelbg.png",
+                "plistFile": ""
+              },
+              "scale9Width": 320.0,
+              "scale9Height": 480.0,
+              "x": 160.0,
+              "y": 240.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "ImageView",
+              "width": 320.0,
+              "height": 480.0,
+              "positionPercentX": 0.5,
+              "positionPercentY": 0.5,
+              "sizePercentX": 0.25,
+              "sizePercentY": 0.166666672,
+              "useMergedTexture": true,
+              "actionTag": 49160123,
+              "tag": 89,
+              "ignoreSize": true,
+              "name": "bg_0",
+              "classname": "ImageView"
+            },
+            "children": [],
+            "classname": "ImageView"
+          },
+          {
+            "options": {
+              "normalData": {
+                "resourceType": 1,
+                "path": "Back.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 0
+              },
+              "disabledData": {
+                "resourceType": 0
+              },
+              "text": "",
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 69.0,
+              "scale9Height": 36.0,
+              "x": 278.0,
+              "y": 18.0,
+              "colorR": 64,
+              "colorG": 224,
+              "colorB": 208,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 69.0,
+              "height": 36.0,
+              "positionPercentX": 0.86875,
+              "positionPercentY": 0.0375,
+              "sizePercentX": 0.321875,
+              "sizePercentY": 0.0833333358,
+              "useMergedTexture": true,
+              "actionTag": 49736587,
+              "tag": 97,
+              "ignoreSize": true,
+              "name": "btn_back",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
+          },
+          {
+            "options": {
+              "text": "开始游戏",
+              "areaWidth": 80.0,
+              "areaHeight": 30.0,
+              "hAlignment": 1,
+              "vAlignment": 1,
+              "touchScaleEnable": true,
+              "x": 146.0,
+              "y": 67.0,
+              "scaleX": 1.29999936,
+              "scaleY": 1.20000052,
+              "colorR": 64,
+              "colorG": 224,
+              "colorB": 208,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Label",
+              "width": 80.0,
+              "height": 30.0,
+              "positionPercentX": 0.45625,
+              "positionPercentY": 0.139583334,
+              "sizePercentX": 0.25,
+              "sizePercentY": 0.0625,
+              "useMergedTexture": true,
+              "actionTag": 41820417,
+              "tag": 142,
+              "name": "beginGame",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          },
+          {
+            "options": {
+              "clipAble": true,
+              "bgColorR": 255,
+              "bgColorG": 255,
+              "bgColorB": 255,
+              "colorType": 2,
+              "bgColorOpacity": 0,
+              "backGroundScale9Enable": true,
+              "x": 71.0,
+              "y": 104.0,
+              "scaleX": 0.406385571,
+              "scaleY": 0.373378217,
+              "rotation": 0.131035209,
+              "touchAble": true,
+              "visible": true,
+              "classType": "PageView",
+              "width": 351.0,
+              "height": 351.0,
+              "positionPercentX": 0.221875,
+              "positionPercentY": 0.216666669,
+              "sizeType": 1,
+              "sizePercentX": 1.096875,
+              "sizePercentY": 0.73125,
+              "useMergedTexture": true,
+              "actionTag": 11576397,
+              "tag": 163,
+              "anchorPointX": 0.0,
+              "anchorPointY": 0.0,
+              "name": "level_page",
+              "classname": "PageView"
+            },
+            "children": [
+              {
+                "options": {
+                  "backGroundImageData": {
+                    "resourceType": 1,
+                    "path": "loadingBg1.png",
+                    "plistFile": ""
+                  },
+                  "colorType": 0,
+                  "bgColorOpacity": 255,
+                  "vectorY": 0.0,
+                  "touchAble": true,
+                  "visible": true,
+                  "classType": "Panel",
+                  "width": 351.0,
+                  "height": 351.0,
+                  "sizePercentX": 1.0,
+                  "sizePercentY": 1.0,
+                  "useMergedTexture": true,
+                  "actionTag": 55976614,
+                  "tag": 170,
+                  "anchorPointX": 0.0,
+                  "anchorPointY": 0.0,
+                  "layoutParameter": {
+                    "type": 2,
+                    "gravity": 2,
+                    "relativeName": "page1",
+                    "relativeToName": "level_page",
+                    "align": 1
+                  },
+                  "name": "page1",
+                  "classname": "Panel"
+                },
+                "children": [],
+                "classname": "Panel"
+              },
+              {
+                "options": {
+                  "backGroundImageData": {
+                    "resourceType": 1,
+                    "path": "loadingBg2.png",
+                    "plistFile": ""
+                  },
+                  "colorType": 0,
+                  "x": 351.0,
+                  "touchAble": true,
+                  "visible": true,
+                  "classType": "Panel",
+                  "width": 351.0,
+                  "height": 351.0,
+                  "positionPercentX": 1.0,
+                  "sizePercentX": 1.0,
+                  "sizePercentY": 1.0,
+                  "useMergedTexture": true,
+                  "actionTag": 10906794,
+                  "tag": 171,
+                  "anchorPointX": 0.0,
+                  "anchorPointY": 0.0,
+                  "layoutParameter": {
+                    "type": 2,
+                    "gravity": 2,
+                    "relativeName": "page2",
+                    "relativeToName": "level_page",
+                    "align": 1
+                  },
+                  "name": "page2",
+                  "classname": "Panel"
+                },
+                "children": [],
+                "classname": "Panel"
+              },
+              {
+                "options": {
+                  "backGroundImageData": {
+                    "resourceType": 1,
+                    "path": "loadingBg4.png",
+                    "plistFile": ""
+                  },
+                  "colorType": 0,
+                  "x": 702.0,
+                  "touchAble": true,
+                  "visible": true,
+                  "classType": "Panel",
+                  "width": 351.0,
+                  "height": 351.0,
+                  "positionPercentX": 2.0,
+                  "sizePercentX": 1.0,
+                  "sizePercentY": 1.0,
+                  "useMergedTexture": true,
+                  "actionTag": 1553382,
+                  "tag": 172,
+                  "anchorPointX": 0.0,
+                  "anchorPointY": 0.0,
+                  "layoutParameter": {
+                    "type": 2,
+                    "gravity": 2,
+                    "relativeName": "page3",
+                    "relativeToName": "level_page",
+                    "align": 1
+                  },
+                  "name": "page3",
+                  "classname": "Panel"
+                },
+                "children": [],
+                "classname": "Panel"
+              },
+              {
+                "options": {
+                  "backGroundImageData": {
+                    "resourceType": 1,
+                    "path": "loadingBg0.png",
+                    "plistFile": ""
+                  },
+                  "colorType": 0,
+                  "x": 1053.0,
+                  "touchAble": true,
+                  "visible": true,
+                  "classType": "Panel",
+                  "width": 351.0,
+                  "height": 351.0,
+                  "positionPercentX": 3.0,
+                  "sizePercentX": 1.0,
+                  "sizePercentY": 1.0,
+                  "useMergedTexture": true,
+                  "actionTag": 38820582,
+                  "tag": 173,
+                  "anchorPointX": 0.0,
+                  "anchorPointY": 0.0,
+                  "layoutParameter": {
+                    "type": 2,
+                    "gravity": 2,
+                    "relativeName": "page4",
+                    "relativeToName": "level_page",
+                    "align": 1
+                  },
+                  "name": "page4",
+                  "classname": "Panel"
+                },
+                "children": [],
+                "classname": "Panel"
+              }
+            ],
+            "classname": "PageView"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}

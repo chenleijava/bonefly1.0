@@ -11,7 +11,7 @@ public:
 
 	virtual void onExit( );
 
-	static Scene*createSence( );
+	static Scene*creatScene( );
 
 	CREATE_FUNC( ListViewLayerTest);
 };

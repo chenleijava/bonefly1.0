@@ -10,6 +10,9 @@ AppDelegate::AppDelegate() {
 AppDelegate::~AppDelegate() 
 {
 }
+
+//cocos2d-x 屏幕适配方案 ：
+//http://www.tairan.com/archives/4809
 bool AppDelegate::applicationDidFinishLaunching() {
    
     // initialize director
@@ -22,36 +25,38 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
 
 #if (CC_TARGET_PLATFORM==CC_PLATFORM_ANDROID)
-        pEGLView->setFrameSize(720, 1280);
-#elif(CC_TARGET_PLATFORM==CC_PLATFORM_IOS||CC_TARGET_PLATFORM==CC_PLATFORM_MAC)
-        pEGLView->setFrameSize(320,480);
+        //pEGLView->setFrameSize(720, 1280);
+#elif(CC_TARGET_PLATFORM==CC_PLATFORM_MAC)
+        //    debug
+        pEGLView->setFrameSize(320.0f, 480.0f);
 #endif
 
-
-    pEGLView->setDesignResolutionSize(320, 480, ResolutionPolicy::EXACT_FIT);
     
-//    auto frameSize = pEGLView->getFrameSize();
-//
-//    // 设置 LsSize 固定值
-//    auto lsSize = cocos2d::Size(320, 480);
-//    
-//    float scaleX = (float) frameSize.width / lsSize.width;
-//    float scaleY = (float) frameSize.height / lsSize.height;
-//    
-//    // 定义 scale 变量
-//    float scale = 0.0f; // MAX(scaleX, scaleY);
-//    if (scaleX > scaleY) {
-//        // 如果是 X 方向偏大，那么 scaleX 需要除以一个放大系数，放大系数可以由枞方向获取，
-//        // 因为此时 FrameSize 和 LsSize 的上下边是重叠的
-//        scale = scaleX / (frameSize.height / (float) lsSize.height);
-//    } else {
-//        scale = scaleY / (frameSize.width / (float) lsSize.width);
-//    }
-//    
-//    log("x: %f; y: %f; scale: %f", scaleX, scaleY, scale);
-//    
-//    // 根据 LsSize 和屏幕宽高比动态设定 WinSize
-//    pEGLView->setDesignResolutionSize(lsSize.width * scale,lsSize.height * scale, ResolutionPolicy::EXACT_FIT);
+    /*
+     Resources width 以下简写为RW，Resources height 以下简写为RH
+     
+     Design width 以下简写为DW，Design height 以下简写为DH
+     
+     Screen width 以下简写为SW，Screen height 以下简写为SH
+     
+     
+     setContentScaleFactor()通常有两个方式来设置参数。
+     RH/DH或RW/DW，不同的因子选择有不同的缩放负作用。
+     用高度比作为内容缩放因子，保证了背景资源的垂直方向在设计分辨率范围内的全部显示。
+     用宽度比作为内容缩放因子，保证了背景资源的水平方向在设计分辨率范围内的全部显示。
+     
+     
+     //设计分辨率宽，设计分辨率高，分辨率策略。
+     setDesignResolutionSize(DW, DH, resolutionPolicy)
+     
+     
+     
+     
+     
+     */
+    //void GLViewProtocol::updateDesignResolutionSize()
+    //DW ,DH, 分辨率策略-->SW/DW  SH/DH
+    pEGLView->setDesignResolutionSize(320,480, ResolutionPolicy::EXACT_FIT);
     
     
 

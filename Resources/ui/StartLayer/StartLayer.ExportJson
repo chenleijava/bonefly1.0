@@ -1,0 +1,197 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 320,
+  "designHeight": 480,
+  "dataScale": 1.0,
+  "textures": [
+    "BoneFly0.plist"
+  ],
+  "texturesPng": [
+    "BoneFly0.png"
+  ],
+  "nodeTree": {
+    "options": {
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "bgColorOpacity": 0,
+          "visible": true,
+          "classType": "Panel",
+          "width": 320.0,
+          "height": 480.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 1.0,
+          "useMergedTexture": true,
+          "actionTag": -1,
+          "tag": 21,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_9",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "fileNameData": {
+                "resourceType": 1,
+                "path": "start.png",
+                "plistFile": ""
+              },
+              "scale9Width": 320.0,
+              "scale9Height": 480.0,
+              "x": 160.0,
+              "y": 240.0,
+              "visible": true,
+              "classType": "ImageView",
+              "width": 320.0,
+              "height": 480.0,
+              "positionPercentX": 0.5,
+              "positionPercentY": 0.5,
+              "sizePercentX": 0.25,
+              "sizePercentY": 0.166666672,
+              "useMergedTexture": true,
+              "actionTag": 33407794,
+              "tag": 23,
+              "ignoreSize": true,
+              "name": "background",
+              "classname": "ImageView"
+            },
+            "children": [],
+            "classname": "ImageView"
+          },
+          {
+            "options": {
+              "text": "退 出",
+              "areaWidth": 80.0,
+              "areaHeight": 30.0,
+              "hAlignment": 1,
+              "vAlignment": 1,
+              "touchScaleEnable": true,
+              "x": 150.0,
+              "y": 80.0,
+              "scaleX": 0.925000131,
+              "scaleY": 0.8,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Label",
+              "width": 80.0,
+              "height": 30.0,
+              "positionPercentX": 0.46875,
+              "positionPercentY": 0.166666672,
+              "sizePercentX": 0.25,
+              "sizePercentY": 0.0625,
+              "useMergedTexture": true,
+              "actionTag": 63648590,
+              "tag": 78,
+              "name": "btn_exit",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          },
+          {
+            "options": {
+              "text": "设 置",
+              "areaWidth": 80.0,
+              "areaHeight": 30.0,
+              "hAlignment": 1,
+              "vAlignment": 1,
+              "touchScaleEnable": true,
+              "x": 150.0,
+              "y": 160.0,
+              "scaleX": 0.925000131,
+              "scaleY": 0.8,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Label",
+              "width": 80.0,
+              "height": 30.0,
+              "positionPercentX": 0.46875,
+              "positionPercentY": 0.333333343,
+              "sizePercentX": 0.25,
+              "sizePercentY": 0.0625,
+              "useMergedTexture": true,
+              "actionTag": 66782817,
+              "tag": 79,
+              "name": "btn_option",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          },
+          {
+            "options": {
+              "text": "开 始",
+              "areaWidth": 80.0,
+              "areaHeight": 30.0,
+              "hAlignment": 1,
+              "vAlignment": 1,
+              "touchScaleEnable": true,
+              "x": 150.0,
+              "y": 200.0,
+              "scaleX": 0.925000131,
+              "scaleY": 0.8,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Label",
+              "width": 80.0,
+              "height": 30.0,
+              "positionPercentX": 0.46875,
+              "positionPercentY": 0.416666657,
+              "sizePercentX": 0.25,
+              "sizePercentY": 0.0625,
+              "useMergedTexture": true,
+              "actionTag": 50421941,
+              "tag": 80,
+              "name": "btn_start",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          },
+          {
+            "options": {
+              "text": "关 于",
+              "areaWidth": 80.0,
+              "areaHeight": 30.0,
+              "hAlignment": 1,
+              "vAlignment": 1,
+              "touchScaleEnable": true,
+              "x": 150.0,
+              "y": 120.0,
+              "scaleX": 0.925000131,
+              "scaleY": 0.8,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Label",
+              "width": 80.0,
+              "height": 30.0,
+              "positionPercentX": 0.46875,
+              "positionPercentY": 0.25,
+              "sizePercentX": 0.25,
+              "sizePercentY": 0.0625,
+              "useMergedTexture": true,
+              "actionTag": 42801192,
+              "tag": 85,
+              "name": "text_about",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}

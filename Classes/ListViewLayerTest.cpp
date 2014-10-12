@@ -10,7 +10,7 @@ ListViewLayerTest::~ListViewLayerTest( )
 {
 }
 
-Scene* ListViewLayerTest::createSence( )
+Scene* ListViewLayerTest::creatScene( )
 {
 	auto _scene = Scene::create( );
 	_scene->addChild( ListViewLayerTest::create( ) );
@@ -24,7 +24,7 @@ bool ListViewLayerTest::init( )
 		return true;
 	}
 
-	auto listview_ui = GUIReader::getInstance( )->widgetFromJsonFile( "ui/ListViewLayer/ListViewLayer.ExportJson" );
+	auto listview_ui = Kit::createWithJsonFileInMac( "ui/ListViewLayer/ListViewLayer.ExportJson" );
 	this->addChild( listview_ui );
 
 	return true;

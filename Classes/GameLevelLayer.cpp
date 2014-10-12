@@ -21,8 +21,10 @@ bool GameLevelLayer::init( )
 
 
 
-	auto ui_level = GUIReader::getInstance( )->widgetFromJsonFile( ui_level_res );
-	this->addChild( ui_level );
+	auto ui_level = Kit::createWithJsonFileInMac( ui_level_res );
+
+    
+    this->addChild( ui_level );
 
 	//register  level btn ,and run scene of  game  
 	auto beginGame = (Button*)Helper::seekWidgetByName( ui_level, "beginGame" );
@@ -65,8 +67,11 @@ bool GameLevelLayer::init( )
 
 	//get page view
 	auto levelpageviews = (PageView*)Helper::seekWidgetByName( ui_level, "level_page" );
-	levelpageviews->setTouchEnabled( true);
-	levelpageviews->scrollToPage(Config::getInstance( )->LevelNum( ) );
+	
+	
+    levelpageviews->scrollToPage(Config::getInstance( )->LevelNum( ) );
+    
+    levelpageviews->setTouchEnabled(true);
 
 	//滑动关卡
 	levelpageviews->addEventListener( [&]( Ref* levelpageviews, PageView::EventType pageType ){

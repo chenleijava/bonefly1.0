@@ -16,7 +16,7 @@ bool GameOverLayer::init( )
 		return true;
 	}
 
-	auto ui_over = GUIReader::getInstance( )->widgetFromJsonFile( ui_over_res );
+	auto ui_over = Kit::createWithJsonFileInMac( ui_over_res );
 	this->addChild( ui_over);
 
 	//back to start scene
