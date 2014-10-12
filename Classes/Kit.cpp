@@ -22,7 +22,7 @@ Widget* Kit::createWithJsonFileInMac(const std::string& filename){
  GUIReader::getInstance()
  */
 Widget* Kit::createWithJsonFile(const std::string& filename){
-    return (Widget*)GUIReader::getInstance()->widgetFromBinaryFile(filename.c_str());
+    return (Widget*)GUIReader::getInstance()->widgetFromJsonFile(filename.c_str());
 }
 
 

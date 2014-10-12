@@ -9,7 +9,7 @@
 
 #include "Enemy.h"
 
-//ÓÎÏ·³¡Ö÷³¡¾°  
+//â€Å’Å“âˆ‘â‰¥Â°Ã·Ëœâ‰¥Â°Ã¦âˆ  
 class GameScene:public Layer
 {
 public:
@@ -20,12 +20,12 @@ public:
 
 	virtual bool init( );
 
-	//³õÊ¼»¯ÓÎÏ·×ÊÔ´
+	//åˆå§‹åŒ–èµ„æºpilstæ–‡ä»¶
 	void initPlist( );
-	//³õÊ¼»¯ÌØĞ§×ÊÔ´ ±¬Õ¨ ÉÁ¹â ÌØĞ§
+	//åˆå§‹åŒ–ç‰¹æ•ˆ
 	void initEffect( );
 
-	//Ìí¼ÓÓÎÏ·³¡¾°
+	//app  maps
     void  addMap( const std::string &mapfilename );
 
 	//onEnter move ship sprite
@@ -33,62 +33,58 @@ public:
 
     virtual void onExit( );
 
-	//ÓÎÏ·ÖĞË¢ĞÂ³¡¾°¶¨Ê±Æ÷
+	//æ›´æ–°æ¸¸æˆåœºæ™¯
 	virtual void update( float dt );
 
-	//´´½¨ÓÎÏ·³¡¾°
+	//
 	static Scene* createScene( int levelNum );
 
-	//¼ì²é¶ÔÏóÊÇ·ñÅö×²
+	//ç¢°æ’æ£€æŸ¥
 	bool isPeng(BaseSprite *a,BaseSprite *b );
 
-	//³õÊ¼»¯ÒÆ¶¯µØÍ¼
+	//åˆå§‹åŒ–åœ°å›¾èƒŒæ™¯ç§»åŠ¨
 	void initMoveMap(float dt );
-	//ÒÆ¶¯µØÍ¼
+	//èƒŒæ™¯åœ°å›¾æ»šåŠ¨
 	void moveMap( float dt );
 
-	//¸üĞÂ·ÖÊı 
-	void updateScore( float dt );
+	//æ›´æ–° å¾—åˆ†
+    void updateScore( float dt );
 
 
-	//************************************
-	// Method:    checkPeng
-	// FullName:  GameScene::checkPeng
-	// Access:    public 
-	// Returns:   void
-	// Qualifier:  ¼ì²éÅö×²  ¸üĞÂ×´Ì¬
-	// Parameter: float dt
-	//************************************
+
+    
 	void checkPeng( float dt);
 
 
-	//ÇåÀíµ±Ç°²ãÖĞµÄ×ÊÔ´
+	//é‡Šæ”¾èµ„æº
 	void releaseR( );
 
-	//¸ù¾İ¹Ø¿¨ÀàĞÍÌí¼ÓÏàÓ¦µÄµĞ»ú
+	//æ·»åŠ æ•Œæœº
 	void addEnemy(float dt );
 
 
+    //æ ¹æ®ç­‰çº§è·å–å¯¹åº”çš„boos
 	int getBoosByLevel( int levelNum);
 
+    //shipæ˜¯å¦é‡ç”Ÿ
 
 	void shipReBorn( );
 
 private:
 
-	int levelNum;//¹Ø¿¨±àºÅ
+	int levelNum;//
 
-	int levelScore;//¹Ø¿¨ÒªÇóBOOSµÄ·ÖÊı
+	int levelScore;//
 
 	Ship *ship;//player ship
 
-	Sprite *mapSprite;//ÓÎÏ·µØÍ¼  ÓÃÓÚ¹ö¶¯¼ÓÔØ
+	Sprite *mapSprite;//
 
-	Sprite *tempMapSprite;//ÓÎÏ·µØÍ¼  ÓÃÓÚ¹ö¶¯¼ÓÔØ
+	Sprite *tempMapSprite;//
 
-	Label * lifeValue;//playerÉúÃüÖµ
+	Label * lifeValue;//
 
-	Label * score;//Íæ¼ÒµÃ·Ö  
+	Label * score;// 
 
 	std::string mapfilenames;
 };

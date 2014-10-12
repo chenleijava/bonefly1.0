@@ -61,7 +61,7 @@ bool GameOverLayer::init( )
 	//获取得分
 	__String score="Score:";
 	score.appendWithFormat("%03d", Config::getInstance( )->getScore( ) );
-	auto _score_label = Label::create(score.getCString( ),"Arial", 24 );
+	auto _score_label = Label::createWithSystemFont(score.getCString( ),"Arial", 24 );
 	auto position = VisibleRect::top( );
 	_score_label->setPosition(Vec2(position.x,position.y-250));
 	_score_label->setColor(Color3B::WHITE);

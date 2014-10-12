@@ -48,7 +48,6 @@ bool GameScene::init()
     initPlist();
     initEffect();
     
-    this->setTouchEnabled(true);
     //set game status
     Config::getInstance()->setGameSatus(ING);
     Config::getInstance()->setScore(0);//rest score
@@ -131,7 +130,7 @@ bool GameScene::init()
     Config::getInstance()->setShipLife(SHIP_LIFES);
     __String life("X");
     life.appendWithFormat("%02d", Config::getInstance()->getShipLife());
-    lifeValue = Label::create(life.getCString(), "微软雅黑", 12);
+    lifeValue = Label::createWithSystemFont(life.getCString(), "Arial", 12);
     lifeValue->setPosition(Vec2(offset * 3, winsize.height - offset));
     lifeValue->setColor(Color3B::RED);
     this->addChild(lifeValue, SHIP_Z_ORDER);
@@ -140,7 +139,7 @@ bool GameScene::init()
     //add score
     __String tempscore("得分：");
     tempscore.appendWithFormat("%07d", Config::getInstance()->getScore());
-    score = Label::create(tempscore.getCString(), "微软雅黑", 12);
+    score = Label::createWithSystemFont(tempscore.getCString(), "Arial", 12);
     score->setPosition(Vec2(winsize.width - 45, winsize.height - offset));
     score->setColor(Color3B::RED);
     this->addChild(score, SHIP_Z_ORDER);
@@ -158,7 +157,6 @@ bool GameScene::init()
     auto bone_btn_sprite = Sprite::create(btn_bone_res);
     bone_btn_sprite->setScale(0.8f);
     auto bone_btn = MenuItemSprite::create(bone_btn_sprite, nullptr, [&](Ref* _bone_btn){
-        auto menuSprite = (MenuItemSprite*)_bone_btn;
         
         //处理炸弹效果
         log("bone released ......");

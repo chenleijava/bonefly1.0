@@ -16,12 +16,11 @@ bool GameLevelLayer::init( )
 
 	log( "page turning and  page index:%ld", Config::getInstance()->LevelNum() );
 
-	/*auto node=SceneReader::getInstance( )->createNodeWithSceneFile( ui_level_res );
-	this->addChild(node);*/
+    /*auto node=SceneReader::getInstance( )->createNodeWithSceneFile( ui_level_res );
+     this->addChild(node);*/
 
 
-
-	auto ui_level = Kit::createWithJsonFileInMac( ui_level_res );
+	auto ui_level = Kit::createWithJsonFile( ui_level_res );
 
     
     this->addChild( ui_level );
