@@ -1,7 +1,7 @@
 #include "StartLayer.h"
 
 #ifndef DEV 
-#define DEV 0
+#define DEV 1
 #endif
 
 StartLayer::StartLayer( ) :start_ui(NULL)
@@ -68,7 +68,7 @@ bool StartLayer::init( )
 			exit(0);	
 #endif
 #if DEV
-			Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, ListViewLayerTest::createSence( ) ) );
+            Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, ListViewLayerTest::creatScene() ) );
 #else
 			Director::getInstance( )->end( );
 #endif
@@ -96,19 +96,16 @@ bool StartLayer::init( )
 	} );
 
 
-	//auto particle_snow = ParticleSystemQuad::create(snow_plist);
-	//auto snow_batch = ParticleBatchNode::createWithTexture(particle_snow->getTexture());
-	//snow_batch->addChild(particle_snow);
-	//this->addChild(snow_batch,0);
 
-	//Kit::addParticle(snow_plist, this, VisibleRect::top());
+
+	Kit::addParticle(snow_plist, this, VisibleRect::top());
 
 	Kit::addParticle(ship_tail_particle_plist, this, Vec2(55,3));
 
 	return true;
 }
 
-Scene * StartLayer::creatScene( )
+Scene * StartLayer::createScene( )
 {
 	auto _scene = Scene::create( );
 	auto _start_layer = StartLayer::create( );
@@ -119,6 +116,7 @@ Scene * StartLayer::creatScene( )
 void StartLayer::releaseResource( )
 {
 	this->removeChild(start_ui);
+
 }
 
 void StartLayer::onExit()

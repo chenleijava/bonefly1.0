@@ -16,9 +16,13 @@ class StartLayer:public Layer
 public:
 	StartLayer( );
 	~StartLayer( );
-	virtual bool init( );//≥ı ºªØstartLayer
-	CREATE_FUNC( StartLayer );//creat layer  and will call back init fun!
-	static Scene *creatScene( );
+	virtual bool init( );//
+	CREATE_FUNC( StartLayer );//
+    /**
+    *
+    *
+    */
+	static Scene *createScene( );
 
 	virtual void onExit();
 

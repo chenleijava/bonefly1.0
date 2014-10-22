@@ -12,9 +12,17 @@ public:
 
 
 	virtual bool init( );
-	static Scene *creatScene( );
+
+    /**
+    *
+    *
+    */
+	static Scene *createScene( );
 	CREATE_FUNC(OptionLayer );
 
+    /**
+    *
+    */
 	virtual void onExit();
 
 

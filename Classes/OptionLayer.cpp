@@ -10,6 +10,7 @@ OptionLayer::~OptionLayer( )
 	
 }
 
+
 bool OptionLayer::init( )
 {
 	if (!Layer::init())
@@ -19,13 +20,13 @@ bool OptionLayer::init( )
     
     //加载设置ui
     ui_option = Kit::createWithJsonFileInMac(ui_option_res);
-    this->addChild(ui_option );
-    
+    this->addChild(ui_option);
+
     //init call back fun and  register touch event lister
     ui_music_call = [&](Ref * btn,Widget::TouchEventType type ){
 		if(type == Widget::TouchEventType::ENDED)
 		{
-			auto _btn = static_cast<Button*>(btn);
+			auto _btn = (Button*)(btn);
 			log( "chage muscis option... ..." );
 			if(_btn->isBright( ) && Config::getInstance( )->getmusicState())
 			{
@@ -53,7 +54,7 @@ bool OptionLayer::init( )
 		if(type == Widget::TouchEventType::ENDED)
 		{
 			log( "chage effect option... ..." );
-			auto _btn = static_cast<Button*>(btn);
+			auto _btn = (Button*)(btn);
 			if(_btn->isBright( )&&Config::getInstance()->geteffectState())
 			{
 				_btn->setBright( false );
@@ -97,8 +98,12 @@ bool OptionLayer::init( )
 	return  true;
 
 }
+#pragma clang diagnostic pop
 
-Scene * OptionLayer::creatScene( )
+/**
+*
+*/
+Scene * OptionLayer::createScene( )
 {
 	auto _scene = Scene::create( );
 	_scene->addChild(OptionLayer::create() );

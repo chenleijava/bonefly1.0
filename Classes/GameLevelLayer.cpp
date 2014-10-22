@@ -20,7 +20,7 @@ bool GameLevelLayer::init( )
      this->addChild(node);*/
 
 
-	auto ui_level = Kit::createWithJsonFile( ui_level_res );
+	auto ui_level = Kit::createWithJsonFileInMac( ui_level_res );
 
     
     this->addChild( ui_level );

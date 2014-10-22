@@ -56,7 +56,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
      */
     //void GLViewProtocol::updateDesignResolutionSize()
     //DW ,DH, 分辨率策略-->SW/DW  SH/DH
-    pEGLView->setDesignResolutionSize(320,480, ResolutionPolicy::EXACT_FIT);
+    pEGLView->setDesignResolutionSize(320,480, ResolutionPolicy::NO_BORDER);
     
     
 
