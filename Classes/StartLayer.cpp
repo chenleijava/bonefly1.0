@@ -53,7 +53,7 @@ bool StartLayer::init( )
 				SimpleAudioEngine::getInstance( )->playEffect( btn_effect1 );
 			}
 			log( "call back option button..." );
-			Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, OptionLayer::creatScene() ) );
+			Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, OptionLayer::createScene() ) );
 		}
 	};
 	auto btn_option = static_cast<Button*>(Helper::seekWidgetByName( start_ui, "btn_option" ));

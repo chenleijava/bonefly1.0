@@ -36,7 +36,7 @@ bool AboutLayer::init( )
 			{
 				SimpleAudioEngine::getInstance( )->playEffect(btn_effect1);
 			}
-			Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, StartLayer::creatScene( ) ) );
+			Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, StartLayer::createScene( ) ) );
 		}
 	});
 

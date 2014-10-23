@@ -86,7 +86,7 @@ bool OptionLayer::init( )
 				SimpleAudioEngine::getInstance( )->playEffect( btn_effect1 );
 			}
 			log( "return to startLayer and run scene ... ..." );
-			Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, StartLayer::creatScene( ) ) );
+			Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, StartLayer::createScene()) );
 		}
 	};
 	auto btn_back_start = (Button*)Helper::seekWidgetByName( ui_option, "btn_back" );
@@ -103,12 +103,13 @@ bool OptionLayer::init( )
 /**
 *
 */
-Scene * OptionLayer::createScene( )
-{
-	auto _scene = Scene::create( );
-	_scene->addChild(OptionLayer::create() );
-	return _scene;
+Scene * OptionLayer::createScene() {
+
+    auto _scene = Scene::create( );
+    _scene->addChild(OptionLayer::create() );
+    return _scene;
 }
+
 
 void OptionLayer::onExit()
 {

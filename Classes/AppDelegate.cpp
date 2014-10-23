@@ -92,7 +92,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
 	// create a scene. it's an autorelease object
 	//auto pScene = StartMenu::scene( );
-	auto pScene = StartLayer::creatScene( );
+	auto pScene = StartLayer::createScene( );
 
 	// run
 	pDirector->runWithScene( pScene );

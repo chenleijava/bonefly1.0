@@ -33,7 +33,7 @@ bool GameOverLayer::init( )
                 SimpleAudioEngine::getInstance()->stopBackgroundMusic();
             }
             
-			Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, StartLayer::creatScene( ) ) );
+			Director::getInstance( )->replaceScene( TransitionFade::create( 1.2f, StartLayer::createScene( ) ) );
 		}
 	};
 	btn_back->addTouchEventListener(btn_back_call);

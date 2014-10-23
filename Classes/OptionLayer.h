@@ -13,11 +13,9 @@ public:
 
 	virtual bool init( );
 
-    /**
-    *
-    *
-    */
+
 	static Scene *createScene( );
+
 	CREATE_FUNC(OptionLayer );
 
     /**
